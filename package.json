@@ -4,9 +4,8 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"build": "vite build && vite preview",
-    	"vercel-build": "npm run build",
-    	"deploy": "vercel",
+		"dev": "vite dev",
+		"build": "vite build",
 		"preview": "vite preview",
 		"seed": "pnpm tsx ./src/lib/db/seed.ts",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
