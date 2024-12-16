@@ -77,7 +77,7 @@
 	const maxPrice = $derived(Math.max(filter.price.range[0], filter.price.range[1]));
 	async function getProducts() {
 		const products = (await (
-			await fetch('https://filtering-svelte.vercel.app/api/products', {
+			await fetch('/api/products', {
 				method: 'POST',
 				body: JSON.stringify({
 					filter: {
